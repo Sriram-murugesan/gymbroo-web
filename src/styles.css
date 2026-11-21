@@ -74,7 +74,6 @@ h2 { font-size: clamp(1.6rem, 3.6vw, 2.4rem); max-width: 22ch; margin-top: 10px;
 
 .levels { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-top: 36px; }
 .level { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 24px; }
-.level-hot { border-color: var(--pink); }
 .tag { display: block; font-size: .75rem; color: var(--pink); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 10px; }
 .level h3 { font-size: 1.3rem; }
 .quote { margin: 12px 0 0; color: var(--muted); }

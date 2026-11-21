@@ -13,7 +13,7 @@ const FEATURES = [
 
 const LEVELS = [
   { name: 'Gentle bro', mood: 'Supportive', quote: '“Legs missed you today, broo. Tomorrow?”' },
-  { name: 'Drill sergeant', mood: 'Firm', quote: '“Two sessions short on back. Move it.”', hot: true },
+  { name: 'Drill sergeant', mood: 'Firm', quote: '“Two sessions short on back. Move it.”' },
   { name: 'No mercy', mood: 'Savage', quote: '“Skipped legs again? Your chicken legs called. They want a refund.”' },
 ]
 
@@ -111,7 +111,7 @@ export default function App() {
             </p>
             <div className="levels">
               {LEVELS.map((l) => (
-                <article key={l.name} className={`level ${l.hot ? 'level-hot' : ''}`}>
+                <article key={l.name} className="level">
                   <span className="tag">{l.mood}</span>
                   <h3>{l.name}</h3>
                   <p className="quote">{l.quote}</p>
