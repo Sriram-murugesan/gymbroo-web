@@ -100,6 +100,10 @@ h2 { font-size: clamp(1.6rem, 3.6vw, 2.4rem); max-width: 22ch; margin-top: 10px;
 .footer .brand { font-size: 1rem; color: var(--text); }
 .footer a { color: var(--pink); }
 
+/* subtle card hover: small lift + pink border */
+.card, .level, .checks li { transition: transform .2s ease, border-color .2s ease, background-color .2s ease; }
+.card:hover, .level:hover, .checks li:hover { transform: translateY(-3px); border-color: var(--pink); background-color: #1b2138; }
+
 @media (max-width: 860px) {
   .hero { padding: 40px 0 64px; }
   .hero-in, .privacy { grid-template-columns: 1fr; gap: 36px; }
@@ -107,4 +111,8 @@ h2 { font-size: clamp(1.6rem, 3.6vw, 2.4rem); max-width: 22ch; margin-top: 10px;
   .nav-links { display: none; }
   .nav-in .btn { margin-left: auto; }
 }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .card, .level, .checks li { transition: none; }
+  .card:hover, .level:hover, .checks li:hover { transform: none; }
+}
