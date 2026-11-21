@@ -65,9 +65,9 @@ export default function App() {
         <section className="hero">
           <div className="wrap hero-in">
             <div className="hero-copy">
-              <span className="pill">Free · Offline · No account</span>
+              <p className="eyebrow">Free · Offline · No account</p>
               <h1>
-                The gym tracker that <span className="grad">roasts you</span> for skipping.
+                The gym tracker that <span className="hl">roasts you</span> for skipping.
               </h1>
               <p className="lead">
                 Log your lifts, beat your last session, and get a 7 PM nudge, or a roast, when you fall behind on
@@ -80,17 +80,8 @@ export default function App() {
                 <li>v0.3.0</li>
               </ul>
             </div>
-            <div className="hero-art" aria-hidden>
-              <div className="glow" />
-              <img src={hero} alt="" width="493" height="740" />
-              <div className="float-card fc-1">
-                <b>🏆 New PR</b>
-                <span>Bench press · 82.5 kg</span>
-              </div>
-              <div className="float-card fc-2">
-                <b>Balance 87</b>
-                <span>Push · Pull · Legs · Core</span>
-              </div>
+            <div className="hero-art">
+              <img src={hero} alt="Low-poly illustration of a boxer in pink and navy" width="493" height="740" />
             </div>
           </div>
         </section>
